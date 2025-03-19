@@ -1,2 +1,10 @@
-<h1>{{title}}</h1>
-<p>{{message}}</p>
+<h1>Our Travel Destinations</h1>
+
+{{#each trips}}
+  <div class="trip">
+    <h2>{{name}}</h2>
+    <p><strong>Location:</strong> {{location}}</p>
+    <p>{{description}}</p>
+    <p><strong>Price:</strong> {{price}}</p>
+  </div>
+{{/each}}
